@@ -75,11 +75,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1 == str2){
-    return true
-  } else {
-    return false
-  }
+  return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -159,7 +155,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return match.ceil(num)
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -189,7 +185,7 @@ function agregarSimboloExclamacion(str) {
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
  
-  return str +"!";
+  return str  +"!";
 }
 
 function combinarNombres(nombre, apellido) {
@@ -204,14 +200,13 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola"  +  nombre + "!";
+  return "Hola"  +" "+  nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  area = 2*((2*alto) + (2*ancho));
-  return area
+  return alto * ancho;
 }
 
 
@@ -225,9 +220,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  tri = (base*altura)
-  areatri = 2 / tri
- return areatri
+  return (base * altura)/2
 }
 
 
