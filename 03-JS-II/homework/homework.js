@@ -4,7 +4,12 @@ function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
-  // Tu código:
+  // Tu código:<>
+  if ( x > y ){
+     return x
+  } else {
+    return y
+  }  
 }
 
 function mayoriaDeEdad(edad) {
@@ -60,6 +65,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  return numero % 1 === 0;
 }
 
 function fizzBuzz(numero) {
